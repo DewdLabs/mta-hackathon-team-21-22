@@ -12,7 +12,6 @@
       src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
       defer
     ></script>
-    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -25,7 +24,7 @@
     <p>Graph will go here</p>
     <h2>Map</h2>
     <p>List of train routes</p>
-    //Google map goes here
+   
     <div id="floating-panel">
         <b>Start: </b>
         <select id="start">
@@ -59,9 +58,9 @@
           <option value="1 Wall St, New York, NY">Wall St</option>
         </select>
       </div>
-      <div id="map"></div>
-      &nbsp;
-      <div id="warnings-panel"></div>
+      <div id="map" heigth="500" width="500"></div>
+      <script src="js/script.js"></script>
+      
 </body>
 
 </html>
