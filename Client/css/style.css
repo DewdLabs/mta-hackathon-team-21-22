@@ -24,3 +24,10 @@ ul {
   li a:hover {
     background-color: #111;
   }
+
+  #my_camera{
+    margin: auto;
+    width: 320px;
+    height: 240px;
+    border: 1px solid black;
+   }

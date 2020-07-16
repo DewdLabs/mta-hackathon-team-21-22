@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MTA Space</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rangeinput.css">
+    <style>
+        body {
+            text-align: center;
+        }
+        input {
+            display: block;
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.24/webcam.js"></script>
+
 </head>
 
 <body>
@@ -14,6 +27,14 @@
         <li><a href="scan.html">Scan</a></li>
         <li><a href="login.html">Logout</a></li>
     </ul>
+    <h2>How many Passengers are in the car your on?</h2>
+    <div id="my_camera"></div>
+    <br>
+    <input type=button value="Take Snapshot" onclick="take_snapshot()">
+    <br>
+    <div id="results"></div>
+    <p>Passengers: 20</p>
+    <script src="js/camscript.js"></script>
 </body>
 
 </html>
