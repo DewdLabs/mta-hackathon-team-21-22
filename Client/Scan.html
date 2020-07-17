@@ -1,0 +1,71 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTA Space</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="rangeinput.css">
+    <style>
+        body {
+            text-align: center;
+        }
+        input {
+            display: block;
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.24/webcam.js"></script>
+
+</head>
+
+<body>
+    
+    <h2 style="text-align:center;color:#0039A6;">MTA Space</h2>  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Metro-North_logo.svg" height="52" width="525" alt=""
+            srcset="">
+    <div style="text-align: center;">
+    
+    </div>
+    <ul 
+>
+        <li><a class="active" href="index.html" style="text-align:center;color:#0039A6;" >Account</a></li>
+        <li><a href="scan.html" style="text-align:center;color:#0039A6;">Scan</a></li>
+        <li><a href="login.html" style="text-align:center;color:#0039A6;">Logout</a></li>
+    </ul>
+    <h2 style="text-align:center;color:#0039A6;">How many Passengers are in the car you're on?</h2>
+    <div id="my_camera"> <img src="https://www.inspiriaoutdoor.com/wp-content/uploads/2018/08/Metro-North-Interior-Brand-Train-Advertising-Common-Bond-1024x683.jpg" height="242" width="325" alt=""
+            srcset=""></div>
+    <br>  
+
+     
+    <input type=button value="Take Snapshot" onclick="take_snapshot()">
+    <br>
+    <div id="results"></div>
+    <p>Passengers: 3</p>
+    <br>
+    <!-- html for range slider -->
+    <h1>Manual: Enter number of passengers below</h1>
+
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  <p style="text-align:center;color:#0039A6;">Value: <span id="demo"></span></p>
+    <h2>Time of the snapshot</h2>
+    <input type="time" id="appt" name="appt"
+       min="09:00" max="18:00" required>
+    <br>
+<input type="date" id="start" name="trip-start"
+       min="2020-07-16" max="2020-09-31"> 
+    
+    <br>
+  <div class="container">
+    <input type="submit" value="Submit" style="text-align:center;color:#0039A6;">
+</div>
+</div>
+    <script src="js/camscript.js"></script>
+    <script src="js/rangescript.js"></script>
+</body>
+
+</html>

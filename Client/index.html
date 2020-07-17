@@ -5,50 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MTA Space</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="map.css">    
+    <link rel="stylesheet" href="ticket.html">
+
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlb1MwkgEmu6_RxqKZqDFv6afAYvyn_2I&callback=initMap" defer></script>
     <script src="js/mapscript.js"></script>
 </head>
 
 <body>
+    <h2 style="text-align:center;color:#0039A6;">MTA Space</h2>  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Metro-North_logo.svg" height="52" width="525" alt=""
+            srcset="">
+    <div style="text-align: center;">
+      
+    </div>
     <ul>
         <li><a class="active" href="index.html">Account</a></li>
         <li><a href="scan.html">Scan</a></li>
         <li><a href="login.html">Logout</a></li>
     </ul>
-    <h2>Statistics</h2>
-    <p>Graph will go here</p>
-    <h2>Map</h2>
-    <p>List of train routes</p>
    
 
-      <div class="container">
-        <div id="floating-panel">
-          <b>Start: </b>
+      <div class="containers" style="color:#fff;">
+        <div id="floating-panel" >
+          <b > Start: </b>
           <select id="start">
-            <option value="penn station, new york, ny">Penn Station</option>
-            <option value="grand central station, new york, ny"
+            <option value="penn station, new york, NY">Penn Station</option>
+            <option value="Grand central station, New York, NY"
               >Grand Central Station</option
             >
             <option value="625 8th Avenue, New York, NY, 10018"
               >Port Authority Bus Terminal</option
             >
-            <option value="staten island ferry terminal, new york, ny"
+            <option value="Staten Island Ferry Terminal, New York, NY"
               >Staten Island Ferry Terminal</option
             >
             <option value="101 E 125th Street, New York, NY"
               >Harlem - 125th St Station</option
             >
           </select>
+            
           <b>End: </b>
           <select id="end">
             <option value="260 Broadway New York NY 10007">City Hall</option>
             <option value="W 49th St & 5th Ave, New York, NY 10020"
               >Rockefeller Center</option
             >
-            <option value="moma, New York, NY">MOMA</option>
+            <option value="MOMA, New York, NY">MOMA</option>
             <option value="350 5th Ave, New York, NY, 10118"
               >Empire State Building</option
             >
@@ -57,10 +61,42 @@
             >
             <option value="1 Wall St, New York, NY">Wall St</option>
           </select>
-        </div>
-        <div id="map" heigth="500" width="500"></div>
+            <label for="start"></label>      
+            
+
+<input type="date" id="start" name="trip-start"
+       min="2020-07-16" max="2020-09-31">  
+      
+           
+            <b>Passenger: </b>
+          
+            <select id="seat">
+            <option value="one seat">1</option>
+            <option value="two seats"
+              >2</option
+            >
+            <option value="Three seats">3</option>
+            <option value="Four seats"
+                    >4</option>
+            <option value="five seats"
+              >5</option>
+            <option value="six seat"
+              >6</option>
+            <option value="Seven seats">7</option>
+          </select>
+            
+        <a href="ticket.html"> <button type="button">Go</button>
+
+            </a>
+          </div>
+
+          <div>
+    <h2><iframe src="https://www.google.com/maps/d/embed?mid=1Won65gWSP9AvzO2Ph9iQyyFwAsE&hl=en" width="640" height="480"></iframe></h2>
+        <h2>Statistics</h2>
+    <p>Graph will go here</p> <div id="map" heigth="500" width="500></div>
       </div>
            
 </body>
 
 </html>
+© 2020 GitHub, Inc.

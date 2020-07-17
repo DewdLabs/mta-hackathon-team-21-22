@@ -1,0 +1,47 @@
+body{
+    font-family: Arial;
+    text-align:center;
+
+}
+ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #0039A6;
+  }
+
+  #my_camera{
+    margin: auto;
+    width: 320px;
+    height: 240px;
+    border: 1px solid black;
+   }
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .2rem 0;
+}
+\   
+
